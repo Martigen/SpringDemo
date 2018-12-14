@@ -19,4 +19,10 @@ public class MyController {
         return "you";
     }
 
+    @GetMapping("/me")
+    public String me(Model model){
+        model.addAttribute("name","ja");
+        model.addAttribute("surname","moje");
+        return "me";
+    }
 }
